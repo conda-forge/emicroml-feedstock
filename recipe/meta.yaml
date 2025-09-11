@@ -1,5 +1,5 @@
 {% set name = "emicroml" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emicroml-{{ version }}.tar.gz
-  sha256: 2d16c423e041038e05fe2e8a89b99ec0d6783bd1ff7be30dacb4c7d86ade815a
+  sha256: 4c3702df283c772ec4aae817b197ff026397502bc39c351947fd020adff515ed
 
 build:
   noarch: python
