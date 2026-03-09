@@ -20,6 +20,7 @@ requirements:
     - setuptools
     - wheel
     - setuptools-scm
+    - dask >=2024.4.1
     - pip
   run:
     - python >={{ python_min }}
@@ -27,6 +28,7 @@ requirements:
     - empix >=0.0.10
     - kornia
     - h5pywrappers
+    - dask >=2024.4.1
 
 test:
   imports:
