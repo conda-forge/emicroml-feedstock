@@ -1,5 +1,5 @@
 {% set name = "emicroml" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emicroml-{{ version }}.tar.gz
-  sha256: 2684c483a7ae8a72b19a9c20d362dde0cf1cd8148f248de66e7f975d9160e240
+  sha256: 792df7516051a221b546863c9666091f5d92f8193f125a7f5a00d37d74ba7c2f
 
 build:
   noarch: python
@@ -20,12 +20,15 @@ requirements:
     - setuptools
     - wheel
     - setuptools-scm
+    - dask >=2024.4.1
     - pip
   run:
     - python >={{ python_min }}
-    - fakecbed >=0.3.6
+    - fakecbed >=0.5.4
+    - empix >=0.0.10
     - kornia
     - h5pywrappers
+    - dask >=2024.4.1
 
 test:
   imports:
